@@ -1,0 +1,14 @@
+[package]
+name = "polars-rust-compiled-function"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "polars_rust_compiled_function"
+crate-type = ["cdylib"]
+
+[dependencies]
+polars = "0.20.0"
+polars-arrow = "0.20.0"
+pyo3 = { version = "0.16.2", features = ["extension-module"] }
