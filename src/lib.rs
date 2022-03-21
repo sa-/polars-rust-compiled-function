@@ -44,7 +44,7 @@ fn hamming_distance_strs(a: Option<&str>, b: Option<&str>) -> Option<u32> {
 }
 
 #[pymodule]
-fn my_polars_functions(_py: Python, m: &PyModule) -> PyResult<()> {
+fn polars_rust_compiled_function(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_wrapped(wrap_pyfunction!(hamming_distance)).unwrap();
     Ok(())
 }
